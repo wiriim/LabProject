@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CustomerMaster.master.cs" Inherits="LabProject.Master.CustomerMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Button ID="HomeBtn" runat="server" Text="Home" OnClick="HomeBtn_Click" />
+            <asp:Button ID="OrderBtn" runat="server" Text="Order Makeup" OnClick="OrderBtn_Click" />
+            <asp:Button ID="Historytbn" runat="server" Text="History" OnClick="Historytbn_Click" />
+            <asp:Button ID="ProfileBtn" runat="server" Text="Profile" OnClick="ProfileBtn_Click" />
+            <asp:Button ID="LogoutBtn" runat="server" Text="Logout" OnClick="LogoutBtn_Click" />
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
